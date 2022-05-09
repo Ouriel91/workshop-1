@@ -9,15 +9,14 @@
 </head>
 <body>
     <form class="form-containter" action="#">
-        <h1>Registration Form</h1>
+        <h1 class="title">Registration Form</h1>
         <div class="form-input">
             <label for="fullname">FullName</label>
-            <input type="text" id="fullname">    
+            <input type="text" id="fullname" required>    
         </div>
         <div class="form-input">
             <label for="username">Username</label>
-            <input type="text" id="username" 
-                required minlength="6" pattern="[^\s]+">    
+            <input type="text" id="username" minlength="6" pattern="[^\s]+" required>    
         </div>
         <div class="form-input">
             <label for="password">Password</label>
@@ -25,28 +24,30 @@
         </div>
         <div class="form-input">
             <label for="age">Age</label>
-            <input type="number" id="age" placeholder="Ex: 1234">    
+            <input type="number" id="age" placeholder="Ex: 1234" min="8" max="120" required>    
         </div>
         <div class="form-input">
             <label for="email">Email</label>
-            <input type="email" id="email" required>    
+            <input type="email" id="email" placeholder="Ex: mymail@company.com" required>    
         </div>
         <div class="form-input">
             <label for="gender">Gender</label>
-            <select name="gender" id="gender">
+            <select class="gender-selection" name="gender" id="gender">
                 <option value="" disabled selected>Select your option</option>
-                <option value="refuse">----</option>
+                <option value="refuse" selected>----</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select>  
         </div>
         <div class="accepte-terms">
-            <input type="checkbox" id="accepter" required>  
             <label for="accepter">accepte terms and conditions</label>  
+            <input type="checkbox" id="accepter" required>  
         </div>
 
-        <input type="submit" value="submit" />
+        <div class="submit-containter">
+            <input class="submit-btn" type="submit" value="submit" />
+        </div>
     </form>
 </body>
 </html>

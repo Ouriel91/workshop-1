@@ -2,14 +2,64 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(110, 172, 205);
+}
+
+.form-containter {
+    background-color: #fff;
+    margin: 10px 30%;
+    padding: 50px;
+}
+
+.title {
+    text-align: center;
+}
 
 .form-input {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.gender-selection {
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .accepte-terms {
     display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.submit-containter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    
+}
+
+.submit-btn:hover{
+    
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px 4px;
 }
 
 input:optional {
@@ -27,8 +77,9 @@ input:required:valid {
 input:required:focus:valid {
     background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
     background-size: 25px;
-  }
-  input:focus:invalid {
+}
+
+input:focus:invalid {
     background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
     background-size: 25px;
-  }
+}
