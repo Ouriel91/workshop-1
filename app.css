@@ -1,1 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.accepte-terms {
+    display: flex;
+}
